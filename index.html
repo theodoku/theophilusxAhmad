@@ -1,27 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
-    <title>Fork Me! FCC: Test Suite Template</title>
-    <link rel="stylesheet" href="css/style.css">
-  </head>
-  
-  <body>
-    <p>Hello!World</p>
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product-Landing Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header id="header">
+        <div class="logo">
+        <img id="header-img1" src="..\images\sozo guitar instrument.jpg">
 
-    <!--
+        <h1>Sozo Music</h1>
+        </div>
+        <div>
+            <img id="header-img2" src="..\images\guitar2.webp" class="stretch" alt="background-image"/>
+        </div>
+        <nav id="nav-bar">
+            <ul>
+                <li><a class="nav-link" href="#Home">Home</a></li>
+                <li><a class="nav-link" href="#Features">Features</a></li>
+                <li><a class="nav-link" href="#How It Works">How It Works</a></li>
+                <li><a class="nav-link" href="#Pricing">Pricing</a></li>
+            </ul>
+        </nav>
+    </header>
+    <p>Reaching out to souls through Music</p>
 
-    Hello Camper!
+    <section class="first-section" id="Home">
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+            <input id="Email" type="Email" placeholder="Enter your email address" name="Email"/>
+            <input id="Submit" type="Submit"/>
+        </form>
+    </section>
+    
+    <section class="second-section" id="Features">
+    <h2>Premium Materials</h2>
 
-    For now, the test suite only works in Chrome!
-    Please read the README below in the JS Editor before beginning.
-    Feel free to delete this message once you have read it.
-    Good luck and Happy Coding!
+    <p>Our guitar fret boards use the finest wood which is locally made.</br>
+        This makes our guitar sounds unique as compared to other products.</p>
 
-    - The freeCodeCamp Team
+    <h2>Ready to Ship</h2>
 
-    -->
-    <script  src="js/index.js"></script>
-  </body>
+    <p>We make sure you receive your custom-made guitar as soon as is done.</br> 
+        There is an On-Time Delivery Guarantee</p>
+    
+    <h2> Quality Assurance</h2>
+
+    <p>For every item bought we package your product well to avoid damages or faults during shipping.</br>
+        There is a Refund and Insurance Policy to compensate our client's products during transportation. </p>
+    </section>
+
+    <section class="third-section" id="How It Works">
+        <iframe id="video" width="683" height="384" src="https://www.youtube.com/embed/_NbzVlQyaD4" title="Every Kind of Guitar Player" 
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </section>
+
+    <section class="forth-section" id="Pricing">
+        <div class="product" id="Stratocaster">
+            <div class="level">Stratocaster Guitar</div>
+            <h3>$200</h3>
+            <ol>
+                <li>Comfortable to play</li>
+                <li>Versatile guitar</li>
+                <li>Made of bass wood</li>
+            </ol>
+            <button type="button"><span>Select</span></button>
+        </div>
+
+        <div class="product" id=" Superstrat">
+            <div class="level">Superstrat Guitar</div>
+            <h3>$300</h3>
+            <ol>
+                <li>Used by metal</br>guitarist</li>
+                <li>Unique pickups</li>
+                <li>Stay in tune</br>for long</li>
+            </ol>
+            <button type="button"><span>Select</span></button>
+        </div>
+
+        <div class="product" id="Telecaster">
+            <div class="level">Telecaster Guitar</div>
+            <h3>$600</h3>
+            <ol>
+                <li>Vintage look</li>
+                <li>Two single-coil</br>pickups</li>
+                <li>Three way selector switch</li>
+            </ol>
+            <button id="button" type="button"><span>Select</span></button>
+        </div>
+    </section>
+    <footer class="footer">
+        <p class="footer-title">copyright 2022 @</br>Sozo Music</br>Terms & Policy</p>
+    </footer>
+</body>
 </html>
